@@ -1,0 +1,32 @@
+{
+  "name": "mutacache",
+  "version": "0.0.0",
+  "description": "A safe cache for mutable objects",
+  "main": "mutacache.js",
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmidwood/mutacache"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2",
+    "tools.repl": ">=0.0.1",
+    "grunt-release-it": "~0.1.1"
+  },
+  "keywords": [
+    "cache",
+    "mutable",
+    "object"
+  ],
+  "author": "Dan Midwood",
+  "license": "APLv2",
+  "bugs": {
+    "url": "https://github.com/danmidwood/mutacache/issues"
+  },
+  "homepage": "https://github.com/danmidwood/mutacache"
+}
