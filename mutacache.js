@@ -1,4 +1,5 @@
 function MutaCache(copyFn) {
+  this.copy = copyFn;
 }
 var cache = {};
 
@@ -15,7 +16,7 @@ function objectCopy(val) {
   if (val && typeof val === 'object') {
     var copy = isArray(val) ? [] : {};
     for (var i in val) {
-      copy[i] = this.deepCopy(val[i]);
+      copy[i] = objectCopy(val[i]);
     }
     return copy;
   }
@@ -30,11 +31,11 @@ MutaCache.prototype.has = function(key) {
 
 MutaCache.prototype.get = function(key) {
   var val = this[key];
-  return this.deepCopy(val);
+  return this.copy(val);
 };
 
 MutaCache.prototype.put = function(key,value) {
-  return this[key] = this.deepCopy(value);
+  return this[key] = this.copy(value);
 };
 
 module.exports = function(opts) {
