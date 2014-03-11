@@ -3,7 +3,7 @@ MutaCache
 
 ##### A cache for mutable javascript data structures.
 
-Do you want to cache an object and then mutate it without affecting the cache? Yes? Then this is the cache for you.
+Do you want to cache an object and then mutate it without affecting the cached representation? Yes? Then this is the cache for you.
 
 ## The Problem
 
