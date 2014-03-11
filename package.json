@@ -1,6 +1,6 @@
 {
   "name": "mutacache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A safe cache for mutable objects",
   "main": "mutacache.js",
   "scripts": {
